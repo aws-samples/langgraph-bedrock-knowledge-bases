@@ -1,0 +1,9 @@
+boto3>=1.34.101
+langchain
+langgraph
+pymupdf
+html2text
+langchain-aws
+langchain-community
+langchain-experimental==0.0.54
+httpx
