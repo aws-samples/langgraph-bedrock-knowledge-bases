@@ -1,0 +1,5 @@
+strands-agents
+strands-agents-tools
+pypdf
+reportlab
+boto3
