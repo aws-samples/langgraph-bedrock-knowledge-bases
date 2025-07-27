@@ -1,0 +1,109 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "This is a detailed medical chart of a patient. Following are the fields - Name, DOB, Sex, Phone, Address, Emergency Contact, Insurance Provider, Primary Care Physician, Weight (lbs), Height (feet and inches), Blood Pressure, Allergies, Medical History, Past Medications, Physician Notes",
+	"class": "Comprehensive Patient Medical Summary",
+	"type": "object",
+	"definitions": {
+		"VITALS_INFO": {
+			"type": "object",
+			"properties": {
+				"weight": {
+					"type": "number",
+					"inferenceType": "inferred",
+					"instruction": "weight of the patient in kilograms or kg. If the weight in specified in lbs convert to kg"
+				},
+				"height": {
+					"type": "number",
+					"inferenceType": "inferred",
+					"instruction": "height of the patient in inches"
+				},
+				"blood_pressure": {
+					"type": "string",
+					"inferenceType": "explicit",
+					"instruction": "Blood Pressure of patient"
+				}
+			}
+		}
+	},
+	"properties": {
+		"Name": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the patient"
+		},
+		"DOB": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Date of birth of the patient"
+		},
+		"Sex": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Gender of the patient"
+		},
+		"Phone": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Phone number of the patient"
+		},
+		"Address": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Address of the patient"
+		},
+		"Emergency Contact": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Emergency contact information for the patient"
+		},
+		"Insurance Provider": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Health insurance provider for the patient"
+		},
+		"Primary Care Physician": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the patient's primary care physician"
+		},
+		"Weight": {
+			"type": "number",
+			"inferenceType": "explicit",
+			"instruction": "Weight of the patient in pounds"
+		},
+		"Height": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Height of the patient in feet and inches"
+		},
+		"Blood Pressure": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Blood pressure reading of the patient"
+		},
+		"Allergies": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "List of allergies the patient has"
+		},
+		"Medical History": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Summary of the patient's medical history"
+		},
+		"Past Medications": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "List of medications the patient has taken in the past"
+		},
+		"Physician Notes": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Notes from the patient's physician, including diagnosis, treatment, and prescriptions"
+		},
+		"vitals": {
+			"$ref": "#/definitions/VITALS_INFO",
+			"instruction": "Vitals of the patient I.E. weight, height and blood pressure"
+		}
+	}
+}

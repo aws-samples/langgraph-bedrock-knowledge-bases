@@ -1,0 +1,69 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "This is a blueprint for a simple patient medical record document. Its contains the fields - Name, DOB, Sex, Phone, Address, Emergency Contact, Insurance Name, Insurance Coverage Type, Insurance Policy Number, Primary Care Physician, Clinic, Physician notes",
+	"class": "Simple Patient Medical Record",
+	"type": "object",
+	"definitions": {},
+	"properties": {
+		"Name": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the patient"
+		},
+		"DOB": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Date of birth of the patient"
+		},
+		"Sex": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Gender of the patient"
+		},
+		"Phone": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Phone number of the patient"
+		},
+		"Address": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Address of the patient"
+		},
+		"Emergency Contact": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Emergency contact information for the patient"
+		},
+		"Insurance Name": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the patient's insurance provider"
+		},
+		"Insurance Coverage Type": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Type of insurance coverage the patient has"
+		},
+		"Insurance Policy Number": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Policy number of the patient's insurance"
+		},
+		"Primary Care Physician": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the patient's primary care physician"
+		},
+		"Clinic": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Name of the clinic where the patient's primary care physician is located"
+		},
+		"Physician Notes": {
+			"type": "string",
+			"inferenceType": "explicit",
+			"instruction": "Notes from the patient's physician, including diagnosis, treatment, and prescription information"
+		}
+	}
+}
