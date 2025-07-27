@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import json
 import boto3
+import sagemaker
 from io import StringIO
 
 # Set page configuration
@@ -12,14 +13,15 @@ st.set_page_config(
 
 # Title
 st.title("Medical Diagnosis Dashboard")
+s3 = boto3.client('s3')
+session = sagemaker.Session()
+bucket_name = session.default_bucket()
 
 # Load the diagnosis data from S3
 def load_diagnosis_data_from_s3():
     try:
-        s3 = boto3.client('s3')
-        bucket_name = "nsoprala-bda-idp-poc-bucket"
+
         object_key = "enriched-output/enriched_output.json"
-        
         response = s3.get_object(Bucket=bucket_name, Key=object_key)
         content = response['Body'].read().decode('utf-8')
         data = json.loads(content)
@@ -31,8 +33,6 @@ def load_diagnosis_data_from_s3():
 # Save the updated diagnosis data to S3
 def save_diagnosis_data_to_s3(data):
     try:
-        s3 = boto3.client('s3')
-        bucket_name = "nsoprala-bda-idp-poc-bucket"
         object_key = "enriched-output/human-updated.json"
         
         json_data = json.dumps(data, indent=2)
