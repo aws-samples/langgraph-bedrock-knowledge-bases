@@ -21,7 +21,7 @@ bucket_name = f"idp-workshop-{account_number}-us-west-2"
 # Load the diagnosis data from S3
 def load_diagnosis_data_from_s3():
     try:
-        object_key = "enriched-output/enriched_output.json"
+        object_key = "enriched-output/bda_processed_output_enriched.json"
         response = s3.get_object(Bucket=bucket_name, Key=object_key)
         content = response['Body'].read().decode('utf-8')
         data = json.loads(content)
