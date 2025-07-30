@@ -562,7 +562,7 @@ def _get_rx_from_api(medication: str, api_key: str = None) -> str:
         }])
     
     # Parse the XML response
-    import xml.etree.ElementTree as ET
+    import defusedxml.ElementTree as ET
     root = ET.fromstring(response.content)
     
     # Extract RxCUI values

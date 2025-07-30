@@ -3,3 +3,4 @@ strands-agents-tools
 pypdf
 reportlab
 boto3
+defusedxml
