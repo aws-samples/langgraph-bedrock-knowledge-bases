@@ -1,30 +1,62 @@
 {
-  "physician_note": {
-    "confidence": 0.439453125,
-    "value": "Brian presents for his annual exam and ongoing evaluation of joint discomfort. Reports persistent morning stiffness in fingers and knees lasting -30 mins. He is able to perform daily activities but notes occasional flare-ups, especially in cold weather. CRP and ESR remain mildly elevated, but no progression on imaging. Rheumatoid factor"
+  "Blood Pressure": {
+    "confidence": 0.8984375,
+    "value": "115/74 mmHg"
   },
-  "gender": {
-    "confidence": 0.87109375,
-    "value": "m"
+  "Address": {
+    "confidence": 0.9296875,
+    "value": "4210 Willow Crest Dr, Fort Worth, TX 76137"
   },
-  "insurance_provider": {
-    "confidence": 0.8515625,
-    "value": "Humana PPO"
+  "Sex": {
+    "confidence": 0.93359375,
+    "value": "Female"
   },
-  "date_of_birth": {
-    "confidence": 0.91015625,
-    "value": "03/11/1986"
+  "Medical History": {
+    "confidence": 0.62109375,
+    "value": "Olivia was diagnosed with hypothyroidism in 2018 and has since been on hormone repl of chronic conditions beyond that and maintains an active lifestyle with yoga and cycli"
   },
-  "patient_name": {
-    "confidence": 0.89453125,
-    "value": "Brian J. Hawkins"
+  "Insurance Provider": {
+    "confidence": 0.9140625,
+    "value": "Cigna"
   },
-  "phone_number": {
-    "confidence": 0.8828125,
-    "value": "(682) 555-0451"
+  "Weight": {
+    "confidence": 0.890625,
+    "value": 148
   },
-  "physician name": {
-    "confidence": 0.71875,
-    "value": "Dr. Samuel Greene"
+  "Physician Notes": {
+    "confidence": 0.578125,
+    "value": "Olivia visited for routine thyroid function evaluation. She reports stable energy levels ar indicate values within normal range. Continued diagnosis: well-managed hypothyroidism Advised regular follow-up every 6 months for labs and symptom tracking. No new med"
+  },
+  "Allergies": {
+    "confidence": 0.392578125,
+    "value": "Olivia is allergic to latex and experiences contact dermatitis when exposed. She also re certain perfumes and cleaning agents which trigger mild respiratory symptoms such as"
+  },
+  "Name": {
+    "confidence": 0.90234375,
+    "value": "Olivia N. Bennett"
+  },
+  "Primary Care Physician": {
+    "confidence": 0.92578125,
+    "value": "Dr. Emily Cho"
+  },
+  "Emergency Contact": {
+    "confidence": 0.87890625,
+    "value": "Natalie Bennett (Sister) - (817) 555-4388"
+  },
+  "DOB": {
+    "confidence": 0.93359375,
+    "value": "01/06/1989"
+  },
+  "Phone": {
+    "confidence": 0.9453125,
+    "value": "(817) 555-4387"
+  },
+  "Height": {
+    "confidence": 0.7109375,
+    "value": "5'7\""
+  },
+  "Past Medications": {
+    "confidence": 0.81640625,
+    "value": "Currently taking Levothyroxine 75mcg daily. Has used topical corticosteroids for mild si on occasion for allergic flare-ups. No major side effects reported from prior prescript"
   }
 }
